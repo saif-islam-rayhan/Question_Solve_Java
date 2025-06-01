@@ -1,0 +1,31 @@
+package bd.generic;
+
+import java.util.*;
+
+class Main{
+    public static <T>int arraysort(T[] arr ,T element){
+       for(int i=0;i<arr.length;i++){
+           if(arr[i] ==element){
+              return i;
+           }
+       }
+       return -1;
+    }
+
+
+
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        Integer[] array= new Integer[n];
+        for (int i=0;i<n;i++){
+            array[i]=sc.nextInt();
+        }
+      Integer idx= arraysort(array,4);
+        System.out.println(idx);
+
+
+    }
+    }
+
+
